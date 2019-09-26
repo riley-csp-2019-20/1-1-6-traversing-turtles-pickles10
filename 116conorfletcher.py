@@ -28,16 +28,15 @@ for s in turtle_shapes:
 #  Where the line starts
 startx = 0
 starty = 0
-
+count = 1
 #Moves the Turtle 
 for t in my_turtles:
     t.penup()
     t.goto(startx, starty)
     t.pendown()
-    t.right(45)     
+    t.right(45*count)     
     t.forward(50)
-    t.setheading(45)
-    t.forward(25)
+    count += 1
 
     
 
